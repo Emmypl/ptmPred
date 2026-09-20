@@ -1,0 +1,25 @@
+# 1. NumPy embedding caches (>100MB / multi-GB)
+*.npy
+output/**/transformer_cache/
+
+# 2. Model weights and checkpoints (>100MB)
+*.h5
+*.pkl
+*.pt
+*.pth
+
+# 3. Intermediate and generated large CSV datasets
+data_engineered/
+output/
+
+# 4. Windows NTFS metadata streams
+*:Zone.Identifier
+*Zone.Identifier*
+
+# 5. Checkpoints and environment caches
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.env
+venv/
+*.md
